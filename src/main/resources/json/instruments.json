@@ -1,0 +1,652 @@
+[
+  {
+    "name": "alphorn",
+    "description": "The alphorn, or alpine horn, is a conical wood horn used for communication in mountains.",
+    "type": "Wind"
+  },
+  {
+    "name": "clarinet",
+    "description": "The clarinet is a clarinet in E♭ or sometimes F, normally with a curved neck.",
+    "type": "Wind"
+  },
+  {
+    "name": "flute",
+    "description": "The flute is a concert flute in G, lower in tone than the flûte d'amour.",
+    "type": "Wind"
+  },
+  {
+    "name": "saxophone",
+    "description": "The saxophone is a woodwind invented by Adolphe Sax which is between the tenor and soprano in size.",
+    "type": "Wind"
+  },
+  {
+    "name": "horn",
+    "description": "The horn is a piston valve brass instrument with a wide-rimmed cup mouthpiece which is pitched in B♭, one octave below the B♭ trumpet.",
+    "type": "Wind"
+  },
+  {
+    "name": "trumpet",
+    "description": "The natural trumpet used in the 1500s to 1700s, this mid 20th century reinvention lacks valves but may have vents.",
+    "type": "Wind"
+  },
+  {
+    "name": "barrel organ",
+    "description": "A barrel organ is a mechanical musical instrument typically operated by a person turning a crank which turns a barrel which has music encoded onto it.",
+    "type": "Wind"
+  },
+  {
+    "name": "oboe",
+    "description": "The bass oboe is a double reed woodwind instrument which is about twice the size of a regular oboe.",
+    "type": "Wind"
+  },
+  {
+    "name": "trombone",
+    "description": "",
+    "type": "Wind"
+  },
+  {
+    "name": "bazooka",
+    "description": "The bazooka is a brass musical instrument several feet in length which incorporates telescopic tubing.",
+    "type": "Wind"
+  },
+  {
+    "name": "didgeridoo",
+    "description": "",
+    "type": "Wind"
+  },
+  {
+    "name": "harmonica (mouth organ)",
+    "description": "Used especially in blues, American folk and country.",
+    "type": "Wind"
+  },
+  {
+    "name": "piccolo",
+    "description": "",
+    "type": "Wind"
+  },
+  {
+    "name": "12 string guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "17-string bass koto",
+    "description": "A koto with 17 rather than 13 strings, sometimes described as a bass koto.",
+    "type": "String"
+  },
+  {
+    "name": "acoustic bass guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "acoustic fretless guitar",
+    "description": "Acoustic guitar without frets.",
+    "type": "String"
+  },
+  {
+    "name": "acoustic guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "aeolian harp",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "archtop guitar",
+    "description": "An archtop guitar is a steel-stringed acoustic or semi-acoustic guitar with a distinctive arched top, which is particularly popular with jazz players.",
+    "type": "String"
+  },
+  {
+    "name": "banjo",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "banjo-ukulele",
+    "description": "small fretted hybrid instrument with a banjo body and a ukulele neck, popular in the 1920-30.",
+    "type": "String"
+  },
+  {
+    "name": "bass guitar",
+    "description": "Bass (modern, typically electrical, but not always)",
+    "type": "String"
+  },
+  {
+    "name": "bass violon",
+    "description": "Most common violin member today, it was the bass-range violin in the original consort.",
+    "type": "String"
+  },
+  {
+    "name": "bass violoncello",
+    "description": "Sixteenth century predecessor of the violoncello, it was fretless with f-holes and had at first three, then later four, strings tuned in fifths.",
+    "type": "String"
+  },
+  {
+    "name": "cello",
+    "description": "also know as violoncello",
+    "type": "String"
+  },
+  {
+    "name": "cimbalom",
+    "description": "European hammered dulcimer",
+    "type": "String"
+  },
+  {
+    "name": "concert harp",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric bass guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric cello",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric fretless guitar",
+    "description": "Electric guitar without frets.",
+    "type": "String"
+  },
+  {
+    "name": "electric grand piano",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric harp",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric lap steel guitar",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric sitar",
+    "description": "an electric derivation of the sitar, it often features sympathetic strings and a more guitar shaped body.",
+    "type": "String"
+  },
+  {
+    "name": "electric upright bass",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric viola",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "electric violin",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "five-string banjo",
+    "description": "A five-string banjo is a banjo with five strings.",
+    "type": "String"
+  },
+  {
+    "name": "fretless bass",
+    "description": "variety of bass guitars without frets",
+    "type": "String"
+  },
+  {
+    "name": "Irish harp / clàrsach",
+    "description": "An Irish/Scottish harp.",
+    "type": "String"
+  },
+  {
+    "name": "mandolin",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "ukeke",
+    "description": "The ukeke is a Hawaiian musical bow made of koa wood, 16 to 24 inches long and about 1½ inches wide with two or three strings fastened through and around either end.",
+    "type": "String"
+  },
+  {
+    "name": "ukulele",
+    "description": "The ukulele is a small guitar-like instrument commonly associated with Hawaiian music. It generally has four nylon or gut strings.",
+    "type": "String"
+  },
+  {
+    "name": "ütőgardon",
+    "description": "The ütőgardon is a folk musical instrument played primarily in Transylvania. It is similar in appearance to a cello, but played percussively like a drum.",
+    "type": "String"
+  },
+  {
+    "name": "valiha",
+    "description": "The valiha is a bamboo tube zither from Madagascar",
+    "type": "String"
+  },
+  {
+    "name": "vichitra veena",
+    "description": "The vichitra veena is a plucked string instrument used in Hindustani music.",
+    "type": "String"
+  },
+  {
+    "name": "vielle",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "Vietnamese guitar",
+    "description": "The Vietnamese guitar is similar to a normal guitar, but with scalloped fingerboard resulting in elevated frets similar to the đàn nguyệt.",
+    "type": "String"
+  },
+  {
+    "name": "vihuela",
+    "description": "Spanish string instrument.",
+    "type": "String"
+  },
+  {
+    "name": "viola",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "viola caipira",
+    "description": "Brazilian música caipira guitar — Used in folk-music, It has ten steel strings in five courses.",
+    "type": "String"
+  },
+  {
+    "name": "viola d'amore",
+    "description": "Baroque fretless similar to both viols and violins. — While it is fretless and played like the violins 'a la braccia', it has a flat back, c-holes and sloping shoulders like a viol.",
+    "type": "String"
+  },
+  {
+    "name": "viola da gamba",
+    "description": "The Generic member of the viol family, use it for Viol credits, most viola da gamba credits are however the Bass Viol",
+    "type": "String"
+  },
+  {
+    "name": "viola organista",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "violin",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "violino piccolo",
+    "description": "The violino piccolo is a stringed instrument of the baroque period. Most examples are similar to a child's size violin in size and are tuned a third or a fourth higher.",
+    "type": "String"
+  },
+  {
+    "name": "viololyra",
+    "description": "cretan lyra / violin hybrid) — Inspired by the violin in 1920, Hellenic luthiers combined parts of the old Cretan lyra with the violin.",
+    "type": "String"
+  },
+  {
+    "name": "violoncello piccolo",
+    "description": "The violoncello piccolo is a Baroque string instrument which is between the viola and cello in size and typically has five strings.",
+    "type": "String"
+  },
+  {
+    "name": "violone",
+    "description": "Contra/double-bass member of the viol family — Violone, The largest/deepest member of the Viol family",
+    "type": "String"
+  },
+  {
+    "name": "violotta",
+    "description": "",
+    "type": "String"
+  },
+  {
+    "name": "virginal",
+    "description": "The virginals is a smaller and simpler rectangular form of the harpsichord with only one string per note",
+    "type": "String"
+  },
+  {
+    "name": "afoxé",
+    "description": "The afoxé is a Brazilian instrument typically consisting of a gourd wrapped in a beaded net.",
+    "type": "Percussion"
+  },
+  {
+    "name": "akete",
+    "description": "three-parts drumset (baandu, funde, and kete) commonly used in Burru and Nyabinghi musics.",
+    "type": "Percussion"
+  },
+  {
+    "name": "alfaia",
+    "description": "The alfaia is a Brazilian cylindrical drum.",
+    "type": "Percussion"
+  },
+  {
+    "name": "baandu",
+    "description": "larger bass drum also known as thunder or pope smasher, it has a double goat skin membrane and is hit with a padded mallet. Important in the Jamaican Burru music and Rastafari movement",
+    "type": "Percussion"
+  },
+  {
+    "name": "balafon",
+    "description": "Balafon, Malian 'gourd xylophone'",
+    "type": "Percussion"
+  },
+  {
+    "name": "bangu",
+    "description": "Widely used in folk music, opera and music ensembles, it can be round or cone-shaped with cow/pigskin nailed to the larger convex end which has a small hole (guxin).",
+    "type": "Percussion"
+  },
+  {
+    "name": "barrel drum",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "bass drum",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "bongos",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "cajón",
+    "description": "Cajón, Peruvian box drum",
+    "type": "Percussion"
+  },
+  {
+    "name": "chau gong",
+    "description": "The chau gong is a large gong made of brass or bronze which is almost flat except for the rim.",
+    "type": "Percussion"
+  },
+  {
+    "name": "chime bar",
+    "description": "A chime bar is a percussion instrument consisting of a tuned metal bar similar to a glockenspiel bar which is mounted on a wooden resonator and played with a mallet.",
+    "type": "Percussion"
+  },
+  {
+    "name": "clapper",
+    "description": "Made of wood, bone or metal, this ancient instrument is the forerunner to many other struck idiophones",
+    "type": "Percussion"
+  },
+  {
+    "name": "clapstick",
+    "description": "Used by Australian Aboriginals to maintain rhythm in chants and traditionally to accompany didgeridoo. There are also Boomerang clapsticks.",
+    "type": "Percussion"
+  },
+  {
+    "name": "congas",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "cowbell",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "cymbal",
+    "description": "Various types of cymbal. Also called chũm chọe",
+    "type": "Percussion"
+  },
+  {
+    "name": "drum set",
+    "description": "Set of drums developed from the 1930's onward, it is used in Jazz, Swing, Rock and Pop music. It consists of snare drum, tom-toms, hi-hats, cymbals and bass drum.",
+    "type": "Percussion"
+  },
+  {
+    "name": "electronic drum set",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "finger cymbals",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "finger snaps",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "foot percussion",
+    "description": "Percussion performed with the feet, such as foot tapping and clogging.",
+    "type": "Percussion"
+  },
+  {
+    "name": "glass harmonica",
+    "description": "Taking the concept of musical glasses but mounting the incrementing bowls on a turnable spindle, it is played with damp fingers.",
+    "type": "Percussion"
+  },
+  {
+    "name": "glass harp",
+    "description": "Known in Persia as far back as the 14th century, it consists of glass containers, tuned by either being filled with water or later being of different sizes.",
+    "type": "Percussion"
+  },
+  {
+    "name": "gong bass drum",
+    "description": "A gong bass drum is a large single drumhead which resembles a gong.",
+    "type": "Percussion"
+  },
+  {
+    "name": "maracas",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "marimba",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "marímbula",
+    "description": "The marímbula is a plucked box musical instrument from the Caribbean.",
+    "type": "Percussion"
+  },
+  {
+    "name": "membranophone",
+    "description": "Any kind of instrument with membranes, usually variously sized drums.",
+    "type": "Percussion"
+  },
+  {
+    "name": "musical box",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "rhythm sticks",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "shakers",
+    "description": "Tube made of metal or bamboo, it is filled with seeds, pebbles or sand. Especially used in Latin American music, it is shaken rhythmically to produce sound.",
+    "type": "Percussion"
+  },
+  {
+    "name": "shekere",
+    "description": "The shekere is a shaker from West Africa consisting of a gourd with beads woven into a net which covers the gourd.",
+    "type": "Percussion"
+  },
+  {
+    "name": "shime-daiko",
+    "description": "The shime-daiko is a small Japanese drum with a short but wide body which has a higher pitch than a normal taiko.",
+    "type": "Percussion"
+  },
+  {
+    "name": "slit drum",
+    "description": "A slit drum is a hollow percussion instrument made of wood or bamboo with a slit at the top.",
+    "type": "Percussion"
+  },
+  {
+    "name": "snare drum",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "steelpan",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "tom-tom",
+    "description": "A tom-tom (or just tom) is a cylindrical drum with no snare, commonly found in a standard drum set.",
+    "type": "Percussion"
+  },
+  {
+    "name": "triangle",
+    "description": "",
+    "type": "Percussion"
+  },
+  {
+    "name": "analog synthesizer",
+    "description": "using analogue circuits and techniques to produce sound electronically, the first types where created in the 1920's with thermionic valves and other electromechanical machineries.",
+    "type": "Electronic"
+  },
+  {
+    "name": "bass pedals",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "bass synthesizer",
+    "description": "A bass synthesizer is used to create sounds in the bass range.",
+    "type": "Electronic"
+  },
+  {
+    "name": "drum machine",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "electronic organ",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "EWI",
+    "description": "EWI (an acronym for electric wind instrument) is the name of Akai's wind controller.",
+    "type": "Electronic"
+  },
+  {
+    "name": "guitar synthesizer",
+    "description": "A guitar synthesizer is any one of a number of systems that allow a guitar player to play synthesizer sound.",
+    "type": "Electronic"
+  },
+  {
+    "name": "Guitaret",
+    "description": "electric lamellophone — small white electric thumb piano with metal tines and an electromagnetic pickup.",
+    "type": "Electronic"
+  },
+  {
+    "name": "keyboard",
+    "description": "electronic or digital keyboard",
+    "type": "Electronic"
+  },
+  {
+    "name": "laser harp",
+    "description": "A laser harp is an electronic musical instrument consisting of several laser beams to be blocked, in analogy with the plucking of the strings of a harp, in order to produce sounds.",
+    "type": "Electronic"
+  },
+  {
+    "name": "Otamatone",
+    "description": "Toy synthesizer — Shaped like an eighth-note with a cute face, it is played with one hand fingering the neck and the other squeezing the head to create wah-wah.",
+    "type": "Electronic"
+  },
+  {
+    "name": "Pianet",
+    "description": "electromechanical piano — An electromechanical piano (not to be confused with electronic piano) designed and produced by Hohner in the 1960 and 70s.",
+    "type": "Electronic"
+  },
+  {
+    "name": "Reactable",
+    "description": "The Reactable is an electronic musical instrument consisting of a round translucent table on which blocks are placed.",
+    "type": "Electronic"
+  },
+  {
+    "name": "sampler",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "synclavier",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "synthesizer",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "telharmonium",
+    "description": "gigantic electronic organ transmitted through telephone wires — considered the first electromechanical musical instrument, an early electronic organ",
+    "type": "Electronic"
+  },
+  {
+    "name": "theremin",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "tubon",
+    "description": "analogue electronic monophonic Organ — electronic bass organ proto-keytar",
+    "type": "Electronic"
+  },
+  {
+    "name": "voice synthesizer",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "wavedrum",
+    "description": "",
+    "type": "Electronic"
+  },
+  {
+    "name": "bullroarer",
+    "description": "",
+    "type": "Other"
+  },
+  {
+    "name": "effects",
+    "description": "Effects refers to devices which enable a musician to modify the sound of an instrument.",
+    "type": "Other"
+  },
+  {
+    "name": "gizmo",
+    "description": "An effects device to be clamped on the bridge, it produces 'synthesizer-like' sounds",
+    "type": "Other"
+  },
+  {
+    "name": "hydraulophone",
+    "description": "woodwater - flute made with hydraulics) — Made of tubing with holes that may have everything from none to two reeds, water instead of air comes out of the holes.",
+    "type": "Other"
+  },
+  {
+    "name": "kazoo",
+    "description": "",
+    "type": "Other"
+  },
+  {
+    "name": "other instruments",
+    "description": "Other instruments. If you can't find an instrument, please request it.",
+    "type": "Other"
+  },
+  {
+    "name": "talkbox",
+    "description": "A talkbox is an effects device which enables a musician to modify the sound of an instrument.",
+    "type": "Other"
+  }
+ ]

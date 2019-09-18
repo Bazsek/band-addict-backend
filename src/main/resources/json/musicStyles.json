@@ -1,0 +1,522 @@
+[
+  {
+    "name": "acid jazz",
+    "description": "Acid jazz consisted of two related movements.",
+    "type": "Jazz"
+  },
+  {
+    "name": "afro-cuban jazz",
+    "description": "Afro-Cuban jazz is the earliest form of Latin jazz",
+    "type": "Jazz"
+  },
+  {
+    "name": "Jazz fusion",
+    "description": "Jazz fusion arrangements vary in complexity",
+    "type": "Jazz"
+  },
+  {
+    "name": "Bebop",
+    "description": "Bebop or bop is a style of jazz developed in the early to mid-1940s in the United States.",
+    "type": "Jazz"
+  },
+  {
+    "name": "Boogie-woogie",
+    "description": "boogie-woogie is mainly associated with dancing",
+    "type": "Jazz"
+  },
+  {
+    "name": "Bossa nova",
+    "description": "Bossa nova is a style of Brazilian music",
+    "type": "Jazz"
+  },
+  {
+    "name": "Coll jazz",
+    "description": "Cool jazz often employs formal arrangements and incorporates elements of classical music",
+    "type": "Jazz"
+  },
+  {
+    "name": "Dixieland",
+    "description": "the first instance of jazz music being called Dixieland, though at the time, the term referred to the band, not the genre.",
+    "type": "Jazz"
+  },
+  {
+    "name": "Twelve-bar blues (Jazz blues)",
+    "description": "The twelve-bar blues is one of the most prominent chord progressions in popular music",
+    "type": "Jazz"
+  },
+  {
+    "name": "Jazz Rock",
+    "description": "The term jazz rock is sometimes used as a synonym for the term 'jazz fusion'",
+    "type": "Jazz"
+  },
+  {
+    "name": "Latin Jazz",
+    "description": "Latin jazz is a genre of jazz with Latin American rhythms",
+    "type": "Jazz"
+  },
+  {
+    "name": "Livetronica",
+    "description": "is a style of music that blends jam band elements with those of electronica",
+    "type": "Jazz"
+  },
+  {
+    "name": "Modal jazz",
+    "description": "Modal jazz is jazz that uses musical modes rather than tonal scales and thinking as a framework.",
+    "type": "Jazz"
+  },
+  {
+    "name": "Swing",
+    "description": "Swing bands usually featured soloists who would improvise on the melody over the arrangement.",
+    "type": "Jazz"
+  },
+  {
+    "name": "Vocal Jazz",
+    "description": "Vocal jazz or jazz singing is an instrumental approach to the voice",
+    "type": "Jazz"
+  },
+  {
+    "name": "Forró",
+    "description": "Forró is more frequent during Brazilian June Festivals.",
+    "type": "Latin"
+  },
+  {
+    "name": "Latin rock",
+    "description": "melting traditional sounds and elements of Latin American and Caribbean folk with rock music",
+    "type": "Latin"
+  },
+  {
+    "name": "Flamenco",
+    "description": "Flamenco in its strictest sense, is a professionalized art-form based on the various folkloric music traditions of southern",
+    "type": "Latin"
+  },
+  {
+    "name": "Tango",
+    "description": "Tango is a style of music  originated among European immigrant populations",
+    "type": "Latin"
+  },
+  {
+    "name": "Tropical music",
+    "description": "encompasses music from the Spanish-speaking islands and coasts of the Caribbean",
+    "type": "Latin"
+  },
+  {
+    "name": "Mambo",
+    "description": "Mambo is a genre of Cuban dance music",
+    "type": "Latin"
+  },
+  {
+    "name": "Cuban rumba",
+    "description": "rumba remains one of Cuba's most characteristic forms of music and dance.",
+    "type": "Latin"
+  },
+  {
+    "name": "Salsa music",
+    "description": "Salsa music is a popular dance music genre that initially arose in New York City",
+    "type": "Latin"
+  },
+  {
+    "name": "Timba",
+    "description": "Timba is more flexible and innovative than salsa, and includes a more diverse range of styles",
+    "type": "Latin"
+  },
+  {
+    "name": "Canzone",
+    "description": "Literally 'song' in Italian, a canzone is an Italian or Provençal song or ballad",
+    "type": "Pop"
+  },
+  {
+    "name": "Country pop",
+    "description": "Country pop is a fusion genre of country music and pop music",
+    "type": "Pop"
+  },
+  {
+    "name": "Dance-pop",
+    "description": "Dance-pop is a popular mainstream style of music",
+    "type": "Pop"
+  },
+  {
+    "name": "Disco polo",
+    "description": "Disco polo is a genre of popular dance music",
+    "type": "Pop"
+  },
+  {
+    "name": "New Romantic",
+    "description": "Influenced by David Bowie, Marc Bolan and Roxy Music, it developed fashions from the glam rock era and the early Romantic period",
+    "type": "Pop"
+  },
+  {
+    "name": "Pop-rap",
+    "description": "The lyrics are often lighthearted, with choruses similar to those heard in pop music.",
+    "type": "Pop"
+  },
+  {
+    "name": "Pop punk",
+    "description": "Pop punk is a genre of rock music that combines influences of pop music with punk rock.",
+    "type": "Pop"
+  },
+  {
+    "name": "Soul Music",
+    "description": "Ray Charles pioneered the soul music genre during the 1950s",
+    "type": "Pop"
+  },
+  {
+    "name": "Progressive Pop",
+    "description": "Groups who combined rock and roll with various other music styles ultimately influenced the creation of progressive rock",
+    "type": "Pop"
+  },
+  {
+    "name": "Turkish pop",
+    "description": "Many music critics argue  only added to the pop industry's shallow image, and is cited as the reason why underground and reactionary music is becoming more popular.",
+    "type": "Pop"
+  },
+  {
+    "name": "Wonky Pop",
+    "description":"'Wonky' is a British English word meaning unsteady, shaky, awry, or wrong.",
+    "type": "Pop"
+  },
+  {
+    "name": "Sunshine pop",
+    "description": "Sunshine pop enjoyed mainstream success in the latter half of the decade",
+    "type": "Pop"
+  },
+  {
+    "name": "Italo dance",
+    "description": "Italo dance is predominantly nightclub-oriented music and mainly produced in Italy.",
+    "type": "Pop"
+  },
+  {
+    "name": "Synth-pop",
+    "description": "The genre has received criticism for alleged lack of emotion and musicianship",
+    "type": "Pop"
+  },
+  {
+    "name": "Contemporary R&B",
+    "description": "Contemporary R&B originated at the end of the disco era",
+    "type": "R&B and soul"
+  },
+  {
+    "name": "Disco",
+    "description": "Disco was the last popular music movement driven by the baby boom generation",
+    "type":"R&B and soul"
+  },
+  {
+    "name": "Funk",
+    "description": "The word funk initially referred to a strong odor.",
+    "type": "R&B and soul"
+  },
+  {
+    "name": "Freestyle music",
+    "description": "A common theme of freestyle lyricism is heartbreak in the city",
+    "type": "R&B and soul"
+  },
+  {
+    "name": "Rhythm and blues",
+    "description": "The term was originally used by record companies to describe recordings marketed predominantly to urban African Americans",
+    "type": "R&B and soul"
+  },
+  {
+    "name": "Alternative rock",
+    "description": "Alternative rock broadly consists of music that differs greatly in terms of its sound, social context and regional roots",
+    "type": "Rock"
+  },
+  {
+    "name": "Indie rock",
+    "description": "Originally used to describe independent record labels, the term became associated with the music they produced and was initially used interchangeably with alternative rock.",
+    "type": "Rock"
+  },
+  {
+    "name": "Sadcore",
+    "description": "characterised by bleak lyrics, downbeat melodies and slower tempos",
+    "type": "Rock"
+  },
+  {
+    "name": "Beat music",
+    "description": "The name Mersey Beat was used for a Liverpool music magazine founded in 1961 by Bill Harry",
+    "type": "Rock"
+  },
+  {
+    "name": "Electronic Rock",
+    "description": "Electronic rock acts usually fuse elements from other music styles, including punk rock, industrial rock, hip hop, techno, and synth-pop",
+    "type": "Rock"
+  },
+  {
+    "name": "Folk Rock",
+    "description": "Folk rock is a hybrid music genre combining elements of folk music and rock music",
+    "type": "Rock"
+  },
+  {
+    "name": "Heavy Metal music",
+    "description": "Heavy metal is traditionally characterized by loud distorted guitars, emphatic rhythms",
+    "type": "Rock"
+  },
+  {
+    "name": "Alternative metal",
+    "description": "Alternative metal  is a rock music fusion genre that infuses heavy metal with influences from alternative rock",
+    "type": "Rock"
+  },
+  {
+    "name": "Avant-garde metal",
+    "description": "Avant-garde metal is influenced by progressive rock and extreme metal, particularly death metal, and is closely related to progressive metal",
+    "type": "Rock"
+  },
+  {
+    "name": "Black metal",
+    "description": "Black metal is an extreme subgenre of heavy metal music. Common traits include fast tempos, a shrieking vocal style",
+    "type": "Rock"
+  },
+  {
+    "name": "Doom Metal",
+    "description": "typically uses slower tempos, low-tuned guitars and a much 'thicker', or 'heavier' sound than other heavy metal genres",
+    "type": "Rock"
+  },
+  {
+    "name": "Glam metal",
+    "description": "Glam metal  is a subgenre of heavy metal, which features pop-influenced hooks and guitar riffs",
+    "type": "Rock"
+  },
+  {
+    "name": "Gothic metal",
+    "description": "Pioneers of gothic metal include Paradise Lost, My Dying Bride and Anathema",
+    "type": "Rock"
+  },
+  {
+    "name": "Power metal",
+    "description": "Power metal bands usually have anthem-like songs with fantasy-based subject matter",
+    "type": "Rock"
+  },
+  {
+    "name": "Symphonic metal",
+    "description": "Nightwish is one of the prime acts on the symphonic metal scene",
+    "type": "Rock"
+  },
+  {
+    "name": "Ancient music",
+    "description": "Ancient music is music that developed in literate cultures, replacing prehistoric music",
+    "type": "Classical music"
+  },
+  {
+    "name": "Early music",
+    "description": "Early music is a broad musical era in the history of Western art music.",
+    "type": "Classical music"
+  },
+  {
+    "name": "Baroque music",
+    "description": "The Baroque period saw the creation of common-practice tonality, an approach to writing music in which a song or piece is written in a particular key",
+    "type": "Classical music"
+  },
+  {
+    "name": "Galant music",
+    "description": "The word 'galant', derives from French",
+    "type": "Classical music"
+  },
+  {
+    "name": "Romantic music",
+    "description": "In the Romantic period, music , dealing with the literary, artistic, and philosophical themes of the time",
+    "type": "Classical music"
+  },
+  {
+    "name": "Modernism",
+    "description": "Inherent within musical modernism is the conviction that music is not a static phenomenon defined  but rather something which is intrinsically historical and developmental.",
+    "type": "Classical music"
+  },
+  {
+    "name": "African heavy metal",
+    "description": "Plants are growing faster due to metal music",
+    "type": "African"
+  },
+  {
+    "name": "African hip hop",
+    "description": "1990s rap started to escalate all over Africa. Each region had a new type of style of hip hop.",
+    "type": "African"
+  },
+  {
+    "name": "Benga music",
+    "description": "Benga is a genre of Kenyan popular music",
+    "type": "African"
+  },
+  {
+    "name": "Bongo Flava",
+    "description": "Bongo flava is the nickname for Tanzanian hip hop music",
+    "type": "African"
+  },
+  {
+    "name": "Bikutsi",
+    "description": "The word 'bikutsi' literally means 'beat the earth' or 'let's beat the earth'",
+    "type": "African"
+  },
+  {
+    "name": "Coupé-Décalé",
+    "description": "Coupé-Décalé is a type of popular dance music originating from Côte d'Ivoire and the Ivorian diaspora in Paris",
+    "type": "African"
+  },
+  {
+    "name": "Genge",
+    "description": "The term Genge is a sheng word for 'a group or a mass of people'.",
+    "type": "African"
+  },
+  {
+    "name": "Highlife",
+    "description": "Highlife is a music genre that originated in present-day Ghana early in the 20th century, during its history as a colony of the British Empire.",
+    "type": "African"
+  },
+  {
+    "name": "Hiplife",
+    "description": "Hiplife is a Ghanaian musical style that fuses Ghanaian culture and hip hop",
+    "type": "African"
+  },
+  {
+    "name": "Igbo rap",
+    "description": "The style draws its main influences from Igbo traditional music and African American music",
+    "type": "African"
+  },
+  {
+    "name": "Jújú",
+    "description": "Jùjú is a style of Nigerian popular music, derived from traditional Yoruba percussion",
+    "type": "African"
+  },
+  {
+    "name": "Kizomba",
+    "description": "Kizomba is a genre of dance and a musical genre originating in Angola",
+    "type": "African"
+  },
+  {
+    "name": "Kuduro",
+    "description": "It is characterized as uptempo, energetic, and danceable.",
+    "type": "African"
+  },
+  {
+    "name": "Kwaito",
+    "description": "It is a variant of house music featuring the use of African sounds and samples.",
+    "type": "African"
+  },
+  {
+    "name": "Makossa",
+    "description": "Makossa, which means  in the Douala language,originated from a Douala dance called the kossa",
+    "type": "African"
+  },
+  {
+    "name": "Morna",
+    "description": "The best internationally known morna singer was Cesária Évora",
+    "type": "African"
+  },
+  {
+    "name": "Palm-wine music",
+    "description": "Palm-wine music was influenced by soukous and highlife",
+    "type": "African"
+  },
+  {
+    "name": "Sakara music",
+    "description": "Sakara music had considerable influence on other genres, including Jùjú and Nigerian Hip Hop",
+    "type": "African"
+  },
+  {
+    "name": "Semba",
+    "description": "one of the most recognizable and entertaining movements in semba",
+    "type": "African"
+  },
+  {
+    "name": "Comedy music",
+    "description": "Comedy music is music that is comic or humorous in nature, encompassing a wide variety of music genres",
+    "type": "Comedy"
+  },
+  {
+    "name": "Comedy rock",
+    "description": "Comedy rock is rock music mixed with comedy, often satire and parody",
+    "type": "Comedy"
+  },
+  {
+    "name": "Parody music",
+    "description": "In music, parody has been used for many different purposes and in various musical contexts",
+    "type": "Comedy"
+  },
+  {
+    "name": "Novelty song",
+    "description": "A novelty song is a comical or nonsensical song, performed principally for its comical effect",
+    "type": "Comedy"
+  },
+  {
+    "name": "Baithak Gana",
+    "description": "Baithak is a social gathering",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Cha-cha-chá",
+    "description": "Cha-cha-chá is a Cuban music genre whose creation has been traditionally attributed to Cuban composer and violinist Enrique Jorrín",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Chutney music",
+    "description": "Initially lyrics were religious in nature and typically sung by females",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Reggae",
+    "description": "Reggae is deeply linked to the Rastafari, an Afrocentric religion",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Rocksteady",
+    "description": "A successor of ska and a precursor to reggae, rocksteady was the dominant style of music in Jamaica for nearly two years",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Rhumba",
+    "description": "Rhumba, also known as ballroom rumba, is a genre of ballroom music and dance",
+    "type": "Caribbean and Caribbean-influenced"
+  },
+  {
+    "name": "Americana",
+    "description": "Americana is an amalgam of American music formed by the confluence of the shared and varied traditions that make up the musical ethos of the United States",
+    "type": "Country"
+  },
+  {
+    "name": "Country blues",
+    "description": "Country blues is acoustic, mainly guitar-driven forms of the blues",
+    "type": "Country"
+  },
+  {
+    "name": "Honky-tonk",
+    "description": "A honky-tonk is both a bar that provides country music for the entertainment of its patrons",
+    "type": "Country"
+  },
+  {
+    "name": "Rockabilly",
+    "description": "Defining features of the rockabilly sound included strong rhythms, vocal twangs, and common use of the tape echo",
+    "type": "Country"
+  },
+  {
+    "name": "Texas country music",
+    "description": "Texas Country is known for fusing traditionalist root sounds with the outspoken, care-free views of outlaw country",
+    "type": "Country"
+  },
+  {
+    "name": "Western music",
+    "description": "Western music is a form of country and hillbilly music composed",
+    "type": "Country"
+  },
+  {
+    "name": "Western swing",
+    "description": "The music is an amalgamation of rural, cowboy, polka, folk, Dixieland jazz and blues blended with swing",
+    "type": "Country"
+  },
+  {
+    "name": "Ambient",
+    "description": "Ambient music is a genre of music that emphasizes tone and atmosphere over traditional musical structure or rhythm",
+    "type": "Electronic music"
+  },
+  {
+    "name": "Breakbeat",
+    "description": "Breakbeat is a broad style of electronic or dance-oriented music which utilizes breaks",
+    "type": "Electronic music"
+  },
+  {
+    "name": "House music",
+    "description": "The mechanical, repetitive rhythm of house was one of its main components",
+    "type": "Electronic music"
+  },
+  {
+    "name": "Jungle music",
+    "description": "Producers create the drum patterns by cutting apart breakbeats, the most common of which is the Amen break",
+    "type": "Electronic music"
+  }
+]
