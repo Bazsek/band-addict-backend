@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Converter Band --> Band DTO
+ */
 public class BandToBandDTOConverter implements Converter<Band, BandDTO> {
 
     private final ConversionService conversionService;

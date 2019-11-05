@@ -4,6 +4,9 @@ import com.bandaddict.DTO.InstrumentDTO;
 import com.bandaddict.Entity.Instrument;
 import org.springframework.core.convert.converter.Converter;
 
+/**
+ * Converter instrument DTO --> instrument
+ */
 public class InstrumentDTOTOInstrumentConverter implements Converter<InstrumentDTO, Instrument> {
 
     @Override

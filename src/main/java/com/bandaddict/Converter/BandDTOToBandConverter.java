@@ -5,6 +5,9 @@ import com.bandaddict.Entity.Band;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.converter.Converter;
 
+/**
+ * Converter Band DTO --> Band
+ */
 public class BandDTOToBandConverter implements Converter<BandDTO, Band> {
 
     private final ConversionService conversionService;

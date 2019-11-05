@@ -41,9 +41,8 @@ public class MyDataController {
     }
 
     @PostMapping("/upload/{type}")
-    public UploadResponse getPath(@CurrentUser final User currentUser, @RequestBody final String imgName, @PathVariable final String type) {
-        final UploadResponse path = new UploadResponse();
-        path.setPath(fileService.getPath(currentUser, imgName, type));
-        return path;
+    public UploadResponse setPath(@CurrentUser final User currentUser, @RequestBody final UploadResponse uploadResponse, @PathVariable final String type) {
+        return fileService.setPath(currentUser, uploadResponse, type);
     }
+
 }

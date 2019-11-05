@@ -5,7 +5,9 @@ import com.bandaddict.DTO.BandDTO;
 import com.bandaddict.DTO.MusicStyleDTO;
 import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.User;
+import com.bandaddict.Response.UploadResponse;
 import com.bandaddict.Service.BandService;
+import com.bandaddict.Service.FileService;
 import com.bandaddict.Service.MusicStyleService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +20,12 @@ public class MyBandController {
 
     private BandService bandService;
     private MusicStyleService musicStyleService;
+    private FileService fileService;
 
-    public MyBandController(final BandService bandService, final MusicStyleService musicStyleService) {
+    public MyBandController(final BandService bandService, final MusicStyleService musicStyleService, final FileService fileService) {
         this.bandService = bandService;
         this.musicStyleService = musicStyleService;
+        this.fileService = fileService;
     }
 
     @PostMapping("/create")
@@ -47,4 +51,10 @@ public class MyBandController {
     public List<UserDTO> getMembers(@CurrentUser final User user) {
         return bandService.getMembers(user);
     }
+
+    @PostMapping("/logo/{type}")
+    public UploadResponse uploadPhoto(@CurrentUser final User currentUser, @RequestBody final UploadResponse uploadResponse, @PathVariable final String type) {
+        return fileService.setPath(currentUser, uploadResponse, type);
+    }
+
 }

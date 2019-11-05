@@ -8,6 +8,9 @@ import com.bandaddict.Enum.PostType;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.converter.Converter;
 
+/**
+ * Converter post --> post DTO
+ */
 public class PostToPostDTOConverter implements Converter<Post, PostDTO> {
 
     private ConversionService conversionService;

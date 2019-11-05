@@ -1,16 +1,18 @@
 package com.bandaddict.Service;
 
 import com.bandaddict.Entity.User;
+import com.bandaddict.Response.UploadResponse;
 
 public interface FileService {
 
     /**
-     * Get saved img path
+     * Create path for the upload
      *
      * @param user current user
-     * @param imgName img name
-     * @param type type of the img
-     * @return string path
+     * @param uploadResponse file path
+     * @param type type
+     * @return Upload response with path
      */
-    String getPath(final User user, final String imgName, final String type);
+    UploadResponse setPath(final User user, final UploadResponse uploadResponse, final String type);
+
 }

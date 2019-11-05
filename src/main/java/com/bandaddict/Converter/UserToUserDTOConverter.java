@@ -24,6 +24,7 @@ public class UserToUserDTOConverter implements Converter<User, UserDTO> {
     public UserDTO convert(final User user) {
         final UserDTO userDTO = new UserDTO();
 
+        userDTO.setId(user.getId());
         userDTO.setName(user.getName());
         userDTO.setEmail(user.getEmail());
         userDTO.setBand(user.getBand());

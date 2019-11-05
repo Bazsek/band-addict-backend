@@ -4,6 +4,9 @@ import com.bandaddict.DTO.MusicStyleDTO;
 import com.bandaddict.Entity.MusicStyle;
 import org.springframework.core.convert.converter.Converter;
 
+/**
+ * Converter music style DTO --> music style
+ */
 public class MusicStyleDTOtoMusicStyleConverter implements Converter<MusicStyleDTO, MusicStyle> {
 
     @Override
