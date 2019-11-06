@@ -13,4 +13,5 @@ public class SheetDTO {
     private String instrument;
     private Date createdAt;
     private User createdBy;
+    private String sheet;
 }

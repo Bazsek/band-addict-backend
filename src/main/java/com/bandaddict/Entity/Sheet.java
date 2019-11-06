@@ -23,6 +23,7 @@ public class Sheet implements Serializable {
     private String name;
     private String instrument;
     private Date createdAt;
+    private String sheet;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

@@ -15,6 +15,7 @@ public class SheetDTOToSheetConverter implements Converter<SheetDTO, Sheet> {
         sheet.setInstrument(sheetDTO.getInstrument());
         sheet.setCreatedAt(sheetDTO.getCreatedAt());
         sheet.setCreatedBy(sheetDTO.getCreatedBy());
+        sheet.setSheet(sheetDTO.getSheet());
 
         return sheet;
     }
