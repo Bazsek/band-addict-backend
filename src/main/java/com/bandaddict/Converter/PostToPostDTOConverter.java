@@ -25,7 +25,7 @@ public class PostToPostDTOConverter implements Converter<Post, PostDTO> {
 
         postDTO.setTitle(post.getTitle());
         postDTO.setDescription(post.getDescription());
-        postDTO.setPostType(PostType.ADVERTISEMENT.getValue());
+        postDTO.setPostType(post.getType().toString());
         postDTO.setCreatedAt(post.getCreatedAt());
         postDTO.setCreatedBy(conversionService.convert(post.getCreatedBy(), UserDTO.class));
         postDTO.setPicture(post.getPicture());

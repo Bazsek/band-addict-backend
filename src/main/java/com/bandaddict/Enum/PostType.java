@@ -6,7 +6,9 @@ public enum PostType {
 
     EVENT("Event"),
 
-    CURIOSITY("Curiosity");
+    CURIOSITY("Curiosity"),
+
+    OTHER("Other");
 
     private String value;
 
