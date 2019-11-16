@@ -23,4 +23,11 @@ public interface PostService {
      * @return list of posts
      */
     List<PostDTO> getAllPost();
+
+    /**
+     * Get post by id
+     * @param id id
+     * @return postDTO
+     */
+    PostDTO getPostById(final Long id);
 }

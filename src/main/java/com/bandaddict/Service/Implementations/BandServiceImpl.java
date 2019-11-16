@@ -80,4 +80,9 @@ public class BandServiceImpl implements BandService {
 
         return members;
     }
+
+    @Override
+    public BandDTO getBandById(final Long id) {
+        return conversionService.convert(bandRepository.findOneById(id), BandDTO.class);
+    }
 }

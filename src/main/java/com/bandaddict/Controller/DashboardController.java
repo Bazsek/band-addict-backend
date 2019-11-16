@@ -5,7 +5,9 @@ import com.bandaddict.DTO.PostDTO;
 import com.bandaddict.DTO.SheetDTO;
 import com.bandaddict.DTO.SongDTO;
 import com.bandaddict.Entity.User;
+import com.bandaddict.Response.SearchResponse;
 import com.bandaddict.Service.PostService;
+import com.bandaddict.Service.SearchService;
 import com.bandaddict.Service.SongService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +20,12 @@ public class DashboardController {
 
     private PostService postService;
     private SongService songService;
+    private SearchService searchService;
 
-    public DashboardController(final PostService postService, final SongService songService) {
+    public DashboardController(final PostService postService, final SongService songService, final SearchService searchService) {
         this.postService = postService;
         this.songService = songService;
+        this.searchService = searchService;
     }
 
     @PostMapping("/create-post")
@@ -55,5 +59,17 @@ public class DashboardController {
         songService.uploadSheet(sheetDTO, user);
 
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/search/{value}")
+    public List<SearchResponse> search(@CurrentUser final User user, @PathVariable final String value) {
+
+        return searchService.search(value);
+    }
+
+    @GetMapping("/get-post-by-id/{id}")
+    public PostDTO getPostById(@CurrentUser final User user, @PathVariable final Long id) {
+
+        return postService.getPostById(id);
     }
 }

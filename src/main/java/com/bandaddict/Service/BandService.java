@@ -30,4 +30,11 @@ public interface BandService {
      * @return list of members
      */
     List<UserDTO> getMembers(final User user);
+
+    /**
+     * Get band by id
+     * @param id id
+     * @return BandDTO
+     */
+    BandDTO getBandById(final Long id);
 }

@@ -5,6 +5,7 @@ import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.Post;
 import com.bandaddict.Entity.User;
 import com.bandaddict.Exception.ConversionException;
+import com.bandaddict.Exception.NotFoundException;
 import com.bandaddict.Repository.PostRepository;
 import com.bandaddict.Service.PostService;
 import org.springframework.core.convert.ConversionService;
@@ -49,5 +50,10 @@ public class PostServiceImpl implements PostService {
 
         return postRepository.findAllByOrderByCreatedAtDesc().stream().
                 map(post -> conversionService.convert(post, PostDTO.class)).collect(Collectors.toList());
+    }
+
+    @Override
+    public PostDTO getPostById(final Long id) {
+        return conversionService.convert(postRepository.findOneById(id), PostDTO.class);
     }
 }

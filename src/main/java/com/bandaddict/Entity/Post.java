@@ -26,6 +26,8 @@ public class Post implements Serializable {
     private User createdBy;
 
     private String title;
+
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @Enumerated(EnumType.STRING)

@@ -34,5 +34,8 @@ public class WebConfig implements WebMvcConfigurer {
         formatterRegistry.addConverter(new SongTOSongDTOConverter());
         formatterRegistry.addConverter(new SheetDTOToSheetConverter());
         formatterRegistry.addConverter(new SheetToSheetDTOConverter());
+        formatterRegistry.addConverter(new UserToSearchResponseConverter());
+        formatterRegistry.addConverter(new BandToSearchResponseConverter());
+        formatterRegistry.addConverter(new PostToSearchResponseConverter());
     }
 }

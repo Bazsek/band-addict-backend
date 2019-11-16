@@ -5,6 +5,7 @@ import com.bandaddict.DTO.BandDTO;
 import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.User;
 import com.bandaddict.Repository.BandRepository;
+import com.bandaddict.Service.BandService;
 import com.bandaddict.Service.JwtTokenService;
 import com.bandaddict.Service.UserService;
 import org.springframework.core.convert.ConversionService;
@@ -21,7 +22,7 @@ public class HomeController {
     private UserService userService;
     private JwtTokenService jwtTokenService;
     private ConversionService conversionService;
-    private BandRepository bandRepository;
+    private BandService bandService;
 
     /**
      * Constructor
@@ -30,10 +31,12 @@ public class HomeController {
      * @param jwtTokenService the jwtTokenService bean
      * @param conversionService the conversionService bean
      */
-    public HomeController(final UserService userService, final JwtTokenService jwtTokenService, final ConversionService conversionService) {
+    public HomeController(final UserService userService, final JwtTokenService jwtTokenService, final ConversionService conversionService,
+                          final BandService bandService) {
         this.userService = userService;
         this.jwtTokenService = jwtTokenService;
         this.conversionService = conversionService;
+        this.bandService = bandService;
     }
 
     @PostMapping("/sign-up")
@@ -60,5 +63,15 @@ public class HomeController {
         userService.activateUser(user.getId());
 
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/get-user-by-id/{id}")
+    public UserDTO getUserById(@CurrentUser final User user, @PathVariable final Long id) {
+        return conversionService.convert(userService.findOneById(id), UserDTO.class);
+    }
+
+    @GetMapping("/get-band-by-id/{id}")
+    public BandDTO getBandById(@CurrentUser final User user, @PathVariable final Long id) {
+        return bandService.getBandById(id);
     }
 }
