@@ -37,5 +37,7 @@ public class WebConfig implements WebMvcConfigurer {
         formatterRegistry.addConverter(new UserToSearchResponseConverter());
         formatterRegistry.addConverter(new BandToSearchResponseConverter());
         formatterRegistry.addConverter(new PostToSearchResponseConverter());
+        formatterRegistry.addConverter(new EventDTOToEventConverter());
+        formatterRegistry.addConverter(new EventToEventDTOConverter());
     }
 }

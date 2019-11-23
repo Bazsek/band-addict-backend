@@ -6,6 +6,7 @@ import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.Band;
 import com.bandaddict.Entity.MusicStyle;
 import com.bandaddict.Entity.User;
+import com.bandaddict.Enum.Role;
 import com.bandaddict.Repository.BandRepository;
 import com.bandaddict.Repository.MusicStyleRepository;
 import com.bandaddict.Repository.UserRepository;
@@ -84,5 +85,31 @@ public class BandServiceImpl implements BandService {
     @Override
     public BandDTO getBandById(final Long id) {
         return conversionService.convert(bandRepository.findOneById(id), BandDTO.class);
+    }
+
+    @Override
+    public void removeFromBand(final Long id) {
+        final User user = userRepository.findOneById(id);
+
+        user.setBand(null);
+        user.setRole(Role.USER);
+        userRepository.save(user);
+    }
+
+    @Override
+    public void addToBand(final User user, final Long id) {
+        final User member = userRepository.findOneById(id);
+
+        member.setBand(user.getBand());
+        member.setRole(Role.MEMBER);
+        userRepository.save(member);
+    }
+
+    @Override
+    public void changeRole(final Long id, final String role) {
+        final User member = userRepository.findOneById(id);
+
+        member.setRole(Role.getEnum(role.toUpperCase()));
+        userRepository.save(member);
     }
 }

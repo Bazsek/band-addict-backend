@@ -37,4 +37,24 @@ public interface BandService {
      * @return BandDTO
      */
     BandDTO getBandById(final Long id);
+
+    /**
+     * Remove user from band
+     * @param id user id
+     */
+    void removeFromBand(final Long id);
+
+    /**
+     * Add user to band
+     * @param user current user
+     * @param id id
+     */
+    void addToBand(final User user, final Long id);
+
+    /**
+     * Change member role
+     * @param id member id
+     * @param role role
+     */
+    void changeRole(final Long id, final String role);
 }

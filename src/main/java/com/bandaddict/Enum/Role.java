@@ -11,7 +11,21 @@ public enum Role {
 
     MEMBER( "MEMBER"),
 
-    FRONTMAN("FRONTMAN");
+    FRONTMAN("FRONTMAN"),
+
+    GUITARIST("GUITARIST"),
+
+    BASS("BASS"),
+
+    VOCAL("VOCAL"),
+
+    KEYBOARD("KEYBOARD"),
+
+    DJ("DJ"),
+
+    DRUMMER("DRUMMER"),
+
+    OTHER("OTHER");
 
     private String value;
 
@@ -21,5 +35,14 @@ public enum Role {
 
     public String getValue(){
         return this.value;
+    }
+
+    public static Role getEnum(final String value) {
+        for(Role role: Role.values()) {
+            if(role.value.equals(value)) {
+                return role;
+            }
+        }
+        return null;
     }
 }

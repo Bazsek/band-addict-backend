@@ -1,5 +1,6 @@
 package com.bandaddict.Service.Implementations;
 
+import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.Band;
 import com.bandaddict.Entity.MusicStyle;
 import com.bandaddict.Entity.Post;
@@ -46,6 +47,24 @@ public class SearchServiceImpl implements SearchService {
         searchResults.addAll(searchPost(param));
 
         return searchResults;
+    }
+
+    @Override
+    public List<UserDTO> searchUsers(final String value) {
+        final List<User> userListByName = userRepository.findByName(value);
+        final List<User> userListByEmail = userRepository.findByEmail(value);
+        final List<User> userListByNickName = userRepository.findByNickName(value);
+
+        userListByEmail.forEach(user -> {
+            if (!userListByName.contains(user)) userListByName.add(user);
+        });
+
+        userListByNickName.forEach(user -> {
+            if (!userListByName.contains(user)) userListByName.add(user);
+        });
+
+        return userListByName.stream().map(searchUser ->
+                conversionService.convert(searchUser, UserDTO.class)).collect(Collectors.toList());
     }
 
     private List<SearchResponse> searchUser(final String param) {

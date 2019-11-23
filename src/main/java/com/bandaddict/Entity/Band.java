@@ -51,6 +51,10 @@ public class Band implements Serializable {
 
     private String bandLogo;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "createdBy")
+    private List<Event> events;
+
     @Override
     public String toString() {
         return "Band [id=" + id + "]";

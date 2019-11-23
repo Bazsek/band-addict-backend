@@ -7,10 +7,13 @@ import com.bandaddict.Entity.User;
 import com.bandaddict.Repository.BandRepository;
 import com.bandaddict.Service.BandService;
 import com.bandaddict.Service.JwtTokenService;
+import com.bandaddict.Service.SearchService;
 import com.bandaddict.Service.UserService;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Home controller
@@ -23,6 +26,7 @@ public class HomeController {
     private JwtTokenService jwtTokenService;
     private ConversionService conversionService;
     private BandService bandService;
+    private SearchService searchService;
 
     /**
      * Constructor
@@ -30,13 +34,15 @@ public class HomeController {
      * @param userService the userService bean
      * @param jwtTokenService the jwtTokenService bean
      * @param conversionService the conversionService bean
+     * @param searchService searchService
      */
     public HomeController(final UserService userService, final JwtTokenService jwtTokenService, final ConversionService conversionService,
-                          final BandService bandService) {
+                          final BandService bandService, final SearchService searchService) {
         this.userService = userService;
         this.jwtTokenService = jwtTokenService;
         this.conversionService = conversionService;
         this.bandService = bandService;
+        this.searchService = searchService;
     }
 
     @PostMapping("/sign-up")
@@ -73,5 +79,10 @@ public class HomeController {
     @GetMapping("/get-band-by-id/{id}")
     public BandDTO getBandById(@CurrentUser final User user, @PathVariable final Long id) {
         return bandService.getBandById(id);
+    }
+
+    @GetMapping("/search/{value}")
+    public List<UserDTO> getUserById(@PathVariable final String value) {
+        return searchService.searchUsers(value);
     }
 }
