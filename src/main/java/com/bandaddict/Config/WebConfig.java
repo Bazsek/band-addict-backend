@@ -30,7 +30,7 @@ public class WebConfig implements WebMvcConfigurer {
         formatterRegistry.addConverter(new BandToBandDTOConverter((ConversionService)formatterRegistry));
         formatterRegistry.addConverter(new MusicStyleTOMusicStyleDTOConverter());
         formatterRegistry.addConverter(new MusicStyleDTOtoMusicStyleConverter());
-        formatterRegistry.addConverter(new SongDTOTOSongConverter());
+        formatterRegistry.addConverter(new SongDTOTOSongConverter((ConversionService)formatterRegistry));
         formatterRegistry.addConverter(new SongTOSongDTOConverter());
         formatterRegistry.addConverter(new SheetDTOToSheetConverter());
         formatterRegistry.addConverter(new SheetToSheetDTOConverter());
@@ -39,5 +39,7 @@ public class WebConfig implements WebMvcConfigurer {
         formatterRegistry.addConverter(new PostToSearchResponseConverter());
         formatterRegistry.addConverter(new EventDTOToEventConverter());
         formatterRegistry.addConverter(new EventToEventDTOConverter());
+        formatterRegistry.addConverter(new AlbumDTOToAlbumConverter((ConversionService)formatterRegistry));
+        formatterRegistry.addConverter(new AlbumToAlbumDTOConverter((ConversionService)formatterRegistry));
     }
 }

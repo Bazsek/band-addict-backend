@@ -55,6 +55,11 @@ public class Band implements Serializable {
     @OneToMany(mappedBy = "createdBy")
     private List<Event> events;
 
+    @JsonIgnore
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "band")
+    private List<Album> albums;
+
     @Override
     public String toString() {
         return "Band [id=" + id + "]";

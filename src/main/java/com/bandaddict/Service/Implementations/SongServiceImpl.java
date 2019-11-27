@@ -1,9 +1,7 @@
 package com.bandaddict.Service.Implementations;
 
-import com.bandaddict.DTO.PostDTO;
 import com.bandaddict.DTO.SheetDTO;
 import com.bandaddict.DTO.SongDTO;
-import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.Band;
 import com.bandaddict.Entity.Sheet;
 import com.bandaddict.Entity.Song;
@@ -53,7 +51,7 @@ public class SongServiceImpl implements SongService {
     @Override
     public List<SongDTO> getAllSong(final User user) {
 
-        return songRepository.getAllByBand(user.getBand()).stream().
+        return songRepository.findAllByBand(user.getBand()).stream().
                 map(song -> conversionService.convert(song, SongDTO.class)).collect(Collectors.toList());
     }
 

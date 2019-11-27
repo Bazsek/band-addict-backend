@@ -1,14 +1,9 @@
 package com.bandaddict.Service.Implementations;
 
+import com.bandaddict.DTO.SongDTO;
 import com.bandaddict.DTO.UserDTO;
-import com.bandaddict.Entity.Band;
-import com.bandaddict.Entity.MusicStyle;
-import com.bandaddict.Entity.Post;
-import com.bandaddict.Entity.User;
-import com.bandaddict.Repository.BandRepository;
-import com.bandaddict.Repository.MusicStyleRepository;
-import com.bandaddict.Repository.PostRepository;
-import com.bandaddict.Repository.UserRepository;
+import com.bandaddict.Entity.*;
+import com.bandaddict.Repository.*;
 import com.bandaddict.Response.SearchResponse;
 import com.bandaddict.Service.SearchService;
 import org.springframework.core.convert.ConversionService;
@@ -28,14 +23,16 @@ public class SearchServiceImpl implements SearchService {
     private BandRepository bandRepository;
     private MusicStyleRepository musicStyleRepository;
     private PostRepository postRepository;
+    private SongRepository songRepository;
 
     public SearchServiceImpl(final UserRepository userRepository, final ConversionService conversionService, final BandRepository bandRepository,
-                             final MusicStyleRepository musicStyleRepository, final PostRepository postRepository) {
+                             final MusicStyleRepository musicStyleRepository, final PostRepository postRepository, final SongRepository songRepository) {
         this.userRepository = userRepository;
         this.conversionService = conversionService;
         this.bandRepository = bandRepository;
         this.musicStyleRepository = musicStyleRepository;
         this.postRepository = postRepository;
+        this.songRepository = songRepository;
     }
 
 
@@ -65,6 +62,13 @@ public class SearchServiceImpl implements SearchService {
 
         return userListByName.stream().map(searchUser ->
                 conversionService.convert(searchUser, UserDTO.class)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<SongDTO> searchSongs(final Band band, final String value) {
+        final List<Song> songList = songRepository.findAllByBandAndAlbumAndNameContaining(band, null, value);
+
+        return songList.stream().map(song -> conversionService.convert(song, SongDTO.class)).collect(Collectors.toList());
     }
 
     private List<SearchResponse> searchUser(final String param) {

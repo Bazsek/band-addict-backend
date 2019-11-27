@@ -1,6 +1,5 @@
 package com.bandaddict.Entity;
 
-import com.bandaddict.Enum.MusicType;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -9,13 +8,12 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Song entity
+ * Album entity
  */
-@Data
 @Entity
 @Table
-public class Song implements Serializable {
-
+@Data
+public class Album implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -23,26 +21,22 @@ public class Song implements Serializable {
     private Long id;
 
     private String name;
-    private Date publishingDate;
+
+    @Column(columnDefinition = "TEXT")
     private String description;
-    private String youtube;
 
-    @OneToMany(mappedBy = "song")
-    private List<MusicStyle> style;
+    private String coverPhoto;
+    private Date createdAt;
 
-    @Enumerated(EnumType.STRING)
-    private MusicType type;
+    @OneToMany(mappedBy = "album")
+    private List<Song> songs;
 
     @ManyToOne
     @JoinColumn(name = "band_id")
     private Band band;
 
-    @ManyToOne
-    @JoinColumn(name = "album_id")
-    private Album album;
-
     @Override
     public String toString() {
-        return "Song [id=" + id + "]";
+        return "Album [id=" + id + "]";
     }
 }

@@ -1,6 +1,8 @@
 package com.bandaddict.Service;
 
+import com.bandaddict.DTO.SongDTO;
 import com.bandaddict.DTO.UserDTO;
+import com.bandaddict.Entity.Band;
 import com.bandaddict.Response.SearchResponse;
 
 import java.util.List;
@@ -23,4 +25,13 @@ public interface SearchService {
      * @return list of users
      */
     List<UserDTO> searchUsers(final String value);
+
+    /**
+     * Search songs by name
+     * @param value string
+     * @param band band
+     * @return list of songs
+     */
+    List<SongDTO> searchSongs(final Band band, final String value);
+
 }

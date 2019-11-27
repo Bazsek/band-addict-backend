@@ -5,12 +5,16 @@ import lombok.Data;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * SongDTO for Song entity
+ */
 @Data
 public class SongDTO {
 
+    private Long id;
     private String title;
     private Date publishingDate;
-    private String album;
+    private AlbumDTO album;
     private String description;
     private String youtube;
     private String type;
