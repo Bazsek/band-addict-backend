@@ -40,7 +40,7 @@ public class AlbumServiceImpl implements AlbumService {
     public List<AlbumDTO> getAlbums(final Band band) {
         final List<AlbumDTO> albumList = new ArrayList<>();
 
-        albumRepository.findAll().forEach(album -> albumList.add(conversionService.convert(album, AlbumDTO.class)));
+        albumRepository.findAllByBand(band).forEach(album -> albumList.add(conversionService.convert(album, AlbumDTO.class)));
 
         return albumList;
     }

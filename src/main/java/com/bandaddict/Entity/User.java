@@ -54,6 +54,9 @@ public class User implements Serializable, UserDetails {
     @OneToMany(mappedBy = "createdBy")
     private List<Post> posts;
 
+    @OneToMany(mappedBy = "createdBy")
+    private List<Lyrics> lyrics;
+
     private String description;
     private String profilePicture;
     private String nickName;

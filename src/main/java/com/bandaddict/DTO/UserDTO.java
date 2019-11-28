@@ -20,6 +20,7 @@ public class UserDTO {
     private Role role;
     private List<InstrumentDTO> instruments;
     private List<PostDTO> posts;
+    private List<LyricsDTO> lyrics;
     private String description;
     private String profilePicture;
     private String nickName;

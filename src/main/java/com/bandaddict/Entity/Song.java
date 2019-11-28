@@ -41,6 +41,9 @@ public class Song implements Serializable {
     @JoinColumn(name = "album_id")
     private Album album;
 
+    @OneToOne
+    private Lyrics lyrics;
+
     @Override
     public String toString() {
         return "Song [id=" + id + "]";

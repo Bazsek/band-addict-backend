@@ -20,4 +20,5 @@ public class SongDTO {
     private String type;
     private BandDTO band;
     private List<MusicStyleDTO> styles;
+    private LyricsDTO lyricsDTO;
 }
