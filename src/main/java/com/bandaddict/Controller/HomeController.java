@@ -5,15 +5,13 @@ import com.bandaddict.DTO.BandDTO;
 import com.bandaddict.DTO.UserDTO;
 import com.bandaddict.Entity.User;
 import com.bandaddict.Repository.BandRepository;
-import com.bandaddict.Service.BandService;
-import com.bandaddict.Service.JwtTokenService;
-import com.bandaddict.Service.SearchService;
-import com.bandaddict.Service.UserService;
+import com.bandaddict.Service.*;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Home controller
@@ -27,6 +25,7 @@ public class HomeController {
     private ConversionService conversionService;
     private BandService bandService;
     private SearchService searchService;
+    private EmailService emailService;
 
     /**
      * Constructor
@@ -35,21 +34,23 @@ public class HomeController {
      * @param jwtTokenService the jwtTokenService bean
      * @param conversionService the conversionService bean
      * @param searchService searchService
+     * @param emailService emailService
      */
     public HomeController(final UserService userService, final JwtTokenService jwtTokenService, final ConversionService conversionService,
-                          final BandService bandService, final SearchService searchService) {
+                          final BandService bandService, final SearchService searchService, final EmailService emailService) {
         this.userService = userService;
         this.jwtTokenService = jwtTokenService;
         this.conversionService = conversionService;
         this.bandService = bandService;
         this.searchService = searchService;
+        this.emailService = emailService;
     }
 
     @PostMapping("/sign-up")
     public ResponseEntity signUp(@RequestBody final UserDTO userDTO) {
         final User user = userService.signUp(userDTO);
 
-        jwtTokenService.generateToken(user.getId());
+        emailService.sendActivationMail(user, jwtTokenService.generateToken(user.getId()), Locale.ENGLISH);
 
         return ResponseEntity.ok().build();
     }
@@ -65,10 +66,10 @@ public class HomeController {
     }
 
     @PatchMapping("/activate")
-    public ResponseEntity activate(final User user) {
+    public UserDTO activate(@CurrentUser final User user) {
         userService.activateUser(user.getId());
 
-        return ResponseEntity.ok().build();
+        return conversionService.convert(user, UserDTO.class);
     }
 
     @GetMapping("/get-user-by-id/{id}")
